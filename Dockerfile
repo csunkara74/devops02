@@ -7,7 +7,7 @@ ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
 COPY package*.json /usr/src/app
 
-RUN npm --proxy http://www-proxy-idc.in.oracle.com:80 install
+RUN npm install
 
 COPY . /usr/src/app
 
